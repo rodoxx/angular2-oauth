@@ -1,0 +1,43 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <h1>Login com oauth2 local</h1>
+      
+      <h2>Credenciais</h2>
+      <h4>Email: test@test.com</h4>
+      <h4>Pass: password</h4>
+
+      <form action="" class="form-horizontal">
+
+          <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputEmail" [(ngModel)]="email" name="email" placeholder="E-mail">
+              </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-2 control-label">Password</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputPass" [(ngModel)]="password" name="password" placeholder="Password">
+                </div>
+              </div>
+
+        <input type="button" class="btn btn-primary" value="Submit" (click)="submitRegister()"/>
+      </form>
+
+      <p>
+        oauth2_response: {{oauth2_response}}
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
